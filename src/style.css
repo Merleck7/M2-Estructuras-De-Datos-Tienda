@@ -1,0 +1,147 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: #3b82f6;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.carrito-btn {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.carrito-btn:hover {
+    background: #f57c00;
+}
+
+/* Productos */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.producto {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: center;
+    padding: 20px;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+}
+
+button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+/* Modal del carrito */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-contenido {
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.cerrar:hover {
+    color: #f00;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #3b82f6;
+    color: white;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+/* Estilos para los elementos del carrito */
+.item-carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.eliminar-btn {
+    background: none;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.eliminar-btn:hover {
+    background: #cc000038;
+}
